@@ -1,0 +1,42 @@
+@import "~src/assets/Style/Linkin.scss";
+
+$headerHeight : 10vh;
+$footerHeight : 10vh;
+
+.Header {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: $headerHeight;
+    background: red;
+
+    @include flex();
+
+    .Active {
+        background: pink;
+    }
+
+    p {
+        cursor: pointer;
+    }
+    
+}
+
+.Content {
+    position: relative;
+    top: calc($headerHeight - 2.5vh);
+    min-height: calc(100vh - $headerHeight - $footerHeight);
+    left:0;
+    width: 100vw;
+    background: rgb(0, 255, 234);
+}
+
+.Footer {
+    margin-top: 7.5vh;
+    position: relative;
+    background: rgb(115, 168, 17);
+    width: 100vw;
+    height: $footerHeight;
+}
+

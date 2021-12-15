@@ -1,1 +1,15 @@
 <p>home works!</p>
+
+<p (click)="slide(-1)">left</p>
+<div *ngFor="let slide of slider; let i = index">
+    <img [src]="slide.src" [alt]="slide.title" *ngIf="i == currentSlide">
+</div>
+<p (click)="slide(1)">right</p>
+
+<br><br><br>
+
+<p (click)="carouselSlide(carouselCell * -1)">left</p>
+<div *ngFor="let slide of slider; let i = index">
+    <img [src]="slide.src" [alt]="slide.title" *ngIf="i >= currentCarouselSlide && i <= currentCarouselSlide + carouselCell - 1">
+</div>
+<p (click)="carouselSlide(carouselCell)">right</p>
