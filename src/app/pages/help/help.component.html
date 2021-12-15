@@ -1,1 +1,7 @@
 <p>help works!</p>
+
+<div *ngFor="let faq of Faq; let i = index;">
+    <p> {{ faq.question }} </p>
+    <div> {{ faq.answer }} </div>
+    <i class="fa fa-arrow" (click)="toggle(i)">a</i>
+</div>

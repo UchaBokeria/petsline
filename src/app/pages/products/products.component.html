@@ -1,1 +1,20 @@
 <p>products works!</p>
+
+<div class="Filter-top">
+    
+</div>
+
+<div class="Filter-side">
+    
+</div>
+
+<div class="Products-list">
+    <div *ngFor="let product of Products;">
+        <img [src]="product.src" [alt]="product.title">
+        <i class="fa fa-love">sa</i>
+        <p class="title"> {{ product.title }} </p>
+        <div class="desc"> {{ product.desc }} </div>
+    </div>
+</div>
+
+<app-paging></app-paging>
