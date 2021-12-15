@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./help.component.scss']
 })
 export class HelpComponent implements OnInit {
-  faq = [
+  Faq = [
     {
       id: 1,
       question: "??",
@@ -23,6 +23,9 @@ export class HelpComponent implements OnInit {
       answer: "!!"
     }
   ];
+  toggle(e:number) {
+
+  }
   constructor() { }
 
   ngOnInit(): void {
