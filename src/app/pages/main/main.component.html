@@ -1,11 +1,21 @@
 <div class="Header">
-    <p routerLinkActive="Active" routerLink="Home">Home</p>
-    <p routerLinkActive="Active" routerLink="Products">Products</p>
-    <p routerLinkActive="Active" routerLink="Help">Help</p>
-    
-    <p routerLinkActive="Active" routerLink="Login">Login</p>
-    <p routerLinkActive="Active" routerLink="SignUp">SignUp</p>
-    <p routerLinkActive="Active" routerLink="Profile">profile</p>
+    <div class="Logo">
+        <img src="assets/Images/logo.png" routerLink="Home">
+    </div>
+
+    <div class="Navigation">
+        
+        <p routerLinkActive="Active" routerLink="Home">Home</p>
+        <p routerLinkActive="Active" routerLink="Products">Products</p>
+        <p routerLinkActive="Active" routerLink="Help">Help</p>
+        
+    </div>
+
+    <div class="Languages" (click)="LanguageDropdown = ! LanguageDropdown" [ngClass] = "{'Language-dropdown' : LanguageDropdown}">
+        <div *ngFor="let lang of Languages;" (click)="changeLanguage()"> {{ lang.title }} </div>
+    </div>
+
+    <i [routerLink]="!checkAuth() ? 'Login' : 'Profile' " class="Profile">profile</i>
 </div>
 
 <div class="Content">

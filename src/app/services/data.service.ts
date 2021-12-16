@@ -4,6 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataService {
-
+  Translate = {
+    svips: "S-vips",
+  };
   constructor() { }
 }

@@ -1,0 +1,36 @@
+@import "~src/assets/Style/Linkin.scss";
+
+.Navigation-bar {
+    width:90%;
+    height: 15vh;
+    @include flex(space-between);
+    margin:0vh 5%;
+
+    p {
+        padding:0 2%;
+        cursor: pointer;
+        width: 13vw;
+        min-height: 10vh;
+        height:auto;
+        background: $white;
+        color: $black;
+
+        &:hover {
+            background: $black;
+            color:white;
+        }
+        border-radius: 60px;
+        letter-spacing: 2px;
+        @include flex(space-around);
+    }
+
+    .Active {
+        background: $black;
+        color:white;
+    }
+}
+
+.Profile-content {
+    width:100%;
+    padding: 1% 6%;
+}

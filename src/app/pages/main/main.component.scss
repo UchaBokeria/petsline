@@ -1,41 +1,90 @@
 @import "~src/assets/Style/Linkin.scss";
 
-$headerHeight : 10vh;
+$headerHeight : 20vh;
 $footerHeight : 10vh;
 
 .Header {
+    z-index: 100;
     position: fixed;
     top:0;
     left:0;
     width: 100vw;
     height: $headerHeight;
-    background: red;
-
+    background: $white;
     @include flex();
 
-    .Active {
-        background: pink;
+    .Logo {
+        cursor: pointer;
+        position: absolute;
+        top:0;
+        left:5vw;
+        width: 10vw;
+        height:inherit;
+
+        img {
+            height:100%;
+            width:auto;
+            object-fit: cover;
+        }
     }
 
-    p {
-        cursor: pointer;
+    .Navigation {
+        letter-spacing: 3px;
+        font-size: 1.6vw;
+        position: absolute;
+        left: 20vw;
+        width: 25vw;
+        @include flex(space-between);
     }
-    
+
+    .Languages {
+        cursor: pointer;
+        position: absolute;
+        right: 15vw;
+        top:8vh;
+        width: 5vw;
+        background: $black;
+        color: white;
+        border-radius: 3px;
+        @include flex(space-between, column);
+
+        height: 5vh;
+        padding: 0.5%;
+        overflow: hidden;
+
+        div {
+            padding: 2%;
+            height:5vh;
+            @include flex(center, column);
+        }
+    }
+
+    .Profile {
+        position: absolute;
+        right: 5vw;
+    }
+
+    .Language-dropdown { height:auto; }
+    .Active { border-bottom: 1px solid $black; }
+    p { cursor: pointer; }
 }
 
 .Content {
+    z-index: 10;
     position: relative;
-    top: calc($headerHeight - 2.5vh);
+    margin-top: calc($headerHeight);
     min-height: calc(100vh - $headerHeight - $footerHeight);
+    height:auto;
     left:0;
     width: 100vw;
-    background: rgb(0, 255, 234);
+    background:  $white;
 }
 
 .Footer {
+    z-index: 10;
     margin-top: 7.5vh;
     position: relative;
-    background: rgb(115, 168, 17);
+    background: $black;
     width: 100vw;
     height: $footerHeight;
 }

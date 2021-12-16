@@ -1,15 +1,50 @@
-<p>home works!</p>
 
-<p (click)="slide(-1)">left</p>
-<div *ngFor="let slide of slider; let i = index">
-    <img [src]="slide.src" [alt]="slide.title" *ngIf="i == currentSlide">
+<div class="Slide-show">
+    <div *ngFor="let slide of slider; let i = index">
+        <img [src]="slide.src" [alt]="slide.title" *ngIf="i == currentSlide">
+    </div>
+
+    <i class="Left-arrow" (click)="slide(-1)">left</i>
+    <i class="Right-arrow" (click)="slide(1)">right</i>
 </div>
-<p (click)="slide(1)">right</p>
 
-<br><br><br>
-
-<p (click)="carouselSlide(carouselCell * -1)">left</p>
-<div *ngFor="let slide of slider; let i = index">
-    <img [src]="slide.src" [alt]="slide.title" *ngIf="i >= currentCarouselSlide && i <= currentCarouselSlide + carouselCell - 1">
+<div class="Show-title">
+    {{ Translate.svips }}
 </div>
-<p (click)="carouselSlide(carouselCell)">right</p>
+
+<div class="Carousel-Svips Carousel">
+    <div *ngFor="let slide of slider; let i = index">
+        <img [src]="slide.src" [alt]="slide.title" *ngIf="i >= currentCarouselSlide && i <= currentCarouselSlide + carouselCell - 1">
+    </div>
+    
+    <i class="Left-arrow" (click)="carouselSlide(carouselCell * -1)">left</i>
+    <i class="Right-arrow" (click)="carouselSlide(carouselCell)">right</i>
+</div>
+
+<div class="Show-title">
+    {{ Translate.vips }}
+</div>
+
+<div class="Carousel-Vips Carousel">
+    <div *ngFor="let slide of slider; let i = index">
+        <img [src]="slide.src" [alt]="slide.title" *ngIf="i >= currentCarouselSlide && i <= currentCarouselSlide + carouselCell - 1">
+    </div>
+    
+    <i class="Left-arrow" (click)="carouselSlide(carouselCell * -1)">left</i>
+    <i class="Right-arrow" (click)="carouselSlide(carouselCell)">right</i>
+</div>
+
+<div class="Show-title">
+    {{ Translate.populars }}
+</div>
+
+<div class="Carousel-Populars Carousel">
+    <div *ngFor="let slide of slider; let i = index">
+        <img [src]="slide.src" [alt]="slide.title" *ngIf="i >= currentCarouselSlide && i <= currentCarouselSlide + carouselCell - 1">
+    </div>
+    
+    <i class="Left-arrow" (click)="carouselSlide(carouselCell * -1)">left</i>
+    <i class="Right-arrow" (click)="carouselSlide(carouselCell)">right</i>
+</div>
+
+<div class="Show-title"></div>

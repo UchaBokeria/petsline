@@ -10,46 +10,50 @@ export class HomeComponent implements OnInit {
   slider = [
     {
       title: "title1",
-      src: "wowa1"
+      src: "assets/Images/carousel pic1.png"
     },
     {
       title: "title2",
-      src: "wowa2"
+      src: "assets/Images/carousel pic2.png"
     },
     {
       title: "title3",
-      src: "wowa3"
+      src: "assets/Images/carousel pic3.png"
     },
     {
       title: "title4",
-      src: "wowa4"
+      src: "assets/Images/carousel pic4.png"
     },
     {
       title: "title5",
-      src: "wowa5"
+      src: "assets/Images/carousel pic5.png"
     },
     {
       title: "title6",
-      src: "wowa6"
+      src: "assets/Images/carousel pic6.png"
     },
     {
       title: "title7",
-      src: "wowa7"
+      src: "assets/Images/carousel pic1.png"
     },
     {
       title: "title8",
-      src: "wowa8"
+      src: "assets/Images/carousel pic2.png"
     },
     {
       title: "title9",
-      src: "wowa9"
+      src: "assets/Images/carousel pic3.png"
     },
     {
       title: "title10",
-      src: "wowa10"
+      src: "assets/Images/carousel pic4.png"
     }
   ];
-
+  Translate = {
+    svips: "S-vips",
+    vips: "Vips",
+    populars: "Popular"
+  };
   currentSlide = 0;
 
   currentCarouselSlide = 0;

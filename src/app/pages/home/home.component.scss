@@ -1,0 +1,52 @@
+@import "~src/assets/Style/Linkin.scss";
+
+$slideshowHeight : 60vh;
+$iconHeight : 5vh;
+
+.Slide-show,
+.Carousel {
+    position: relative;
+    width:100%;
+    height: $slideshowHeight;
+    background: #eee;
+    overflow:hidden;
+
+    div {
+        position: absolute;
+        
+        width: 100%;
+        height: inherit;
+
+        img {
+            height:inherit;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .Left-arrow {
+        position: absolute;
+        cursor: pointer;
+        height: $iconHeight;
+        top: calc(($slideshowHeight / 2 ) - ($iconHeight / 2));
+        left:1.5vw;
+    }
+
+    .Right-arrow {
+        position: absolute;
+        cursor: pointer;
+        height: $iconHeight;
+        top: calc(($slideshowHeight / 2 ) - ($iconHeight / 2));
+        right:3vw;
+    }
+
+    
+}
+
+.Show-title {
+    margin: 8vh 0;
+    width: 100%;
+    height: 10vh;
+    font-size: 2.5vw;
+    @include flex();
+}

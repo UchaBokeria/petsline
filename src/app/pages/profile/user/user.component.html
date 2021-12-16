@@ -1,8 +1,10 @@
 <div class="Navigation-bar">
-    <p routerLink="Dashboard">dashboard</p>
-    <p routerLink="Bookmarks">bookmarks</p>
-    <p routerLink="Analytics">Analytics</p>
-    <p routerLink="About">About</p>
+    <p routerLinkActive="Active" routerLink="Dashboard"> <i>&</i> dashboard</p>
+    <p routerLinkActive="Active" routerLink="Bookmarks"> <i>&</i> bookmarks</p>
+    <p routerLinkActive="Active" routerLink="Analytics"> <i>&</i> Analytics</p>
+    <p routerLinkActive="Active" routerLink="About"> <i>&</i> About</p>
+
+    <p (click)="Logout()"> <i>&</i> Logout</p>
 </div>
 
 <div class="Profile-content">

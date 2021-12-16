@@ -1,0 +1,56 @@
+@import "~src/assets/Style/Linkin.scss";
+
+$faqHeight : 8vh;
+
+.Container-faq {
+    width: 100%;
+    position: relative;
+    margin: 25vh 0;
+    
+
+
+    .Faq {
+        margin:5vh 10%;
+        position: relative;
+        width:80%;
+        height: $faqHeight;
+        border-radius: 3px;
+        background: #eee;
+        overflow: hidden;
+        
+
+        p { 
+            padding-left:3%;
+            padding-top:1vh;
+            @include flex('');
+            height: calc($faqHeight - 1vh);         
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .answer { 
+            position: relative;
+            z-index: 100;
+            height: auto; 
+            background:inherit;
+            line-height:1.2;
+            border-bottom-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding:3%;
+            line-height:1.4; 
+        }
+
+        i { 
+            position: absolute;
+            right: 3vw;
+            top: 4vh;
+        }
+    }
+    
+}
+
+.show-answer { 
+    height: auto !important;
+    margin-bottom: 15vh !important;
+}
