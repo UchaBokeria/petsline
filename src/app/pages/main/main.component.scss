@@ -48,13 +48,13 @@ $footerHeight : 10vh;
         border-radius: 3px;
         @include flex(space-between, column);
 
-        height: 5vh;
-        padding: 0.5%;
+        height:25px;
+        padding: 2px;
         overflow: hidden;
 
         div {
             padding: 2%;
-            height:5vh;
+            height:35px;
             @include flex(center, column);
         }
     }
