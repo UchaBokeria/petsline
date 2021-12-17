@@ -1,1 +1,3 @@
-<p>paging works!</p>
+<div class="Paging">
+    <div *ngFor="let page of pages" (click)="changePage(page)"> {{ page }} </div>
+</div>

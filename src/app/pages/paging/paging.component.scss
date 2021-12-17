@@ -1,0 +1,20 @@
+@import "~src/assets/Style/linkin";
+
+.Paging {
+    width:100%;
+    height:15vh;
+    background-color: #eee;
+    @include flex(space-around);
+
+    div {
+        width: 10%;
+        height: inherit;
+        border-radius: 3px;
+        @include flex();
+
+        &:hover {
+            background: $black;
+            color: $white;
+        }
+    }
+}
