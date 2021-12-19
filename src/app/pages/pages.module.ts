@@ -13,6 +13,8 @@ import { SignupComponent } from './signup/signup.component';
 import { PagingComponent } from './paging/paging.component';
 import { ProfileModule } from './profile/profile.module';
 import { WildcardComponent } from './wildcard/wildcard.component';
+import { DetailComponent } from './detail/detail.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { WildcardComponent } from './wildcard/wildcard.component';
     SignupComponent,
     PagingComponent,
     MainComponent,
-    WildcardComponent
+    WildcardComponent,
+    DetailComponent,
+    ForgotpasswordComponent
   ],
   imports: [
     CommonModule,

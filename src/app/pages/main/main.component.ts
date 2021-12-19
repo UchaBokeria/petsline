@@ -39,7 +39,7 @@ export class MainComponent implements OnInit {
   }
 
   checkAuth() {
-    return true;
+    return false;
   }
 
   constructor(private Authguardservice: AuthguardServiceService, private router: Router) {}  

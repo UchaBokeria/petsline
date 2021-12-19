@@ -1,3 +1,15 @@
-<p>login works!</p>
-<p routerLinkActive="Active" routerLink="../SignUp">SignUp</p>
-<button (click)="login()">lOGIN</button>
+<div class="Contianer-login">
+    <div class="login">
+        
+        <h1>შეავსეთ</h1>
+
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="password">
+        
+        <p routerLinkActive="Active" routerLink="../SignUp">დაგავიწყდა პაროლი?</p>
+        <p routerLinkActive="Active" routerLink="../SignUp">არ გაქ აქაუნთი? დარეგისტრირდი</p>
+
+        <button (click)="login()">შესვლა</button>
+
+    </div>    
+</div>
