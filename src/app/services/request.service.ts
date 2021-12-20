@@ -15,10 +15,12 @@ export class RequestService {
   constructor(private Http:HttpClient) { }
 
   Post(options:any) {
+    console.log(1);
     return this.Http.post<any>( 
       this.URL + options.Router + "/" ,
       options.Scheme,
     { headers: this.HEADER } ).subscribe(data => {
+      console.log(data);
       return data;
     })
   }
