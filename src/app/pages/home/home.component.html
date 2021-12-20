@@ -3,9 +3,8 @@
     <div *ngFor="let slide of slider; let i = index">
         <img [src]="slide.src" [alt]="slide.title" *ngIf="i == currentSlide">
     </div>
-
-    <i class="Left-arrow" (click)="slide(-1)">left</i>
-    <i class="Right-arrow" (click)="slide(1)">right</i>
+    <i class="icon-rightArrow Left-arrow" (click)="slide(-1)"></i>
+    <i class="icon-rightArrow Right-arrow" (click)="slide(1)"></i>
 </div>
 
 <div class="Show-title">
@@ -17,8 +16,8 @@
         <img [src]="slide.src" [alt]="slide.title" *ngIf="i >= currentCarouselSlide && i <= currentCarouselSlide + carouselCell - 1">
     </div>
     
-    <i class="Left-arrow" (click)="carouselSlide(carouselCell * -1)">left</i>
-    <i class="Right-arrow" (click)="carouselSlide(carouselCell)">right</i>
+    <i class="icon-rightArrow Left-arrow  " (click)="carouselSlide(carouselCell * -1)"></i>
+    <i class="icon-rightArrow Right-arrow " (click)="carouselSlide(carouselCell)"></i>
 </div>
 
 <div class="Show-title">
@@ -30,8 +29,8 @@
         <img [src]="slide.src" [alt]="slide.title" *ngIf="i >= currentCarouselSlide && i <= currentCarouselSlide + carouselCell - 1">
     </div>
     
-    <i class="Left-arrow" (click)="carouselSlide(carouselCell * -1)">left</i>
-    <i class="Right-arrow" (click)="carouselSlide(carouselCell)">right</i>
+    <i class="icon-rightArrow Left-arrow  " (click)="carouselSlide(carouselCell * -1)"></i>
+    <i class="icon-rightArrow Right-arrow " (click)="carouselSlide(carouselCell)"></i>
 </div>
 
 <div class="Show-title">
@@ -43,8 +42,8 @@
         <img [src]="slide.src" [alt]="slide.title" *ngIf="i >= currentCarouselSlide && i <= currentCarouselSlide + carouselCell - 1">
     </div>
     
-    <i class="Left-arrow" (click)="carouselSlide(carouselCell * -1)">left</i>
-    <i class="Right-arrow" (click)="carouselSlide(carouselCell)">right</i>
+    <i class="icon-rightArrow Left-arrow  " (click)="carouselSlide(carouselCell * -1)"></i>
+    <i class="icon-rightArrow Right-arrow " (click)="carouselSlide(carouselCell)"></i>
 </div>
 
 <div class="Show-title"></div>

@@ -22,24 +22,22 @@ export class MainComponent implements OnInit {
       id: 2,
       title: "Eng"
     },
-    {
-      id: 2,
-      title: "Eng"
-    },
-    {
-      id: 2,
-      title: "Eng"
-    }
   ];
 
+  currentLang =     {
+      id: 1,
+      title: "Geo"
+    };
   LanguageDropdown = false;
 
-  changeLanguage() {
-    return false;
+  changeLanguage(e:number) 
+  {
+    this.currentLang = this.Languages[e];
+
   }
 
   checkAuth() {
-    return false;
+    return true;
   }
 
   constructor(private Authguardservice: AuthguardServiceService, private router: Router) {}  

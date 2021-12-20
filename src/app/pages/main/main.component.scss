@@ -4,6 +4,10 @@ $headerHeight : 20vh;
 $footerHeight : 10vh;
 
 .Header {
+    i {
+        font-size: 2vw;
+        cursor: pointer;
+    }
     z-index: 100;
     position: fixed;
     top:0;
@@ -38,6 +42,7 @@ $footerHeight : 10vh;
     }
 
     .Languages {
+        div {color:white;}
         cursor: pointer;
         position: absolute;
         right: 15vw;
@@ -60,6 +65,10 @@ $footerHeight : 10vh;
     }
 
     .Profile {
+        color: $black;
+        &::before{
+            color: $black;
+        }
         position: absolute;
         right: 5vw;
     }

@@ -18,6 +18,9 @@
         &:hover {
             background: $black;
             color:white;
+            i::before{
+                color:white;
+            }
         }
         border-radius: 60px;
         letter-spacing: 2px;
@@ -27,6 +30,9 @@
     .Active {
         background: $black;
         color:white;
+        i::before{
+            color:white;
+        }
     }
 }
 

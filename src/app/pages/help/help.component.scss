@@ -3,6 +3,9 @@
 $faqHeight : 8vh;
 
 .Container-faq {
+    i {
+        cursor: pointer;
+    }
     width: 100%;
     position: relative;
     margin: 25vh 0;
@@ -15,11 +18,12 @@ $faqHeight : 8vh;
         width:80%;
         height: $faqHeight;
         border-radius: 3px;
-        background: #eee;
+        background: $black;
         overflow: hidden;
         
 
         p { 
+            color:white;
             padding-left:3%;
             padding-top:1vh;
             @include flex('');
@@ -30,6 +34,7 @@ $faqHeight : 8vh;
         }
 
         .answer { 
+            color:white;
             position: relative;
             z-index: 100;
             height: auto; 
@@ -42,6 +47,7 @@ $faqHeight : 8vh;
         }
 
         i { 
+            &::before{color : white;}
             position: absolute;
             right: 3vw;
             top: 4vh;

@@ -25,14 +25,24 @@ $iconHeight : 5vh;
     }
 
     .Left-arrow {
+        &::before{
+            color:white;
+        }
+        transform: rotate(180deg);
+        color:white;
+        font-size:2.4vw;
         position: absolute;
         cursor: pointer;
-        height: $iconHeight;
         top: calc(($slideshowHeight / 2 ) - ($iconHeight / 2));
         left:1.5vw;
     }
 
     .Right-arrow {
+        &::before{
+            color:white;
+        }
+        color:white;
+        font-size:2.4vw;
         position: absolute;
         cursor: pointer;
         height: $iconHeight;
