@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestService } from '../../services/request.service';
 
 @Component({
   selector: 'app-home',
@@ -76,9 +77,16 @@ export class HomeComponent implements OnInit {
     console.log(e);
   }
 
-  constructor() { }
+  constructor(private RequestService:RequestService) { }
 
   ngOnInit(): void {
+    var data = this.RequestService.Post({
+      Router: "Help",
+      Scheme: {
+        action: "read"
+      }
+    });
+    console.log(data);
   }
 
 }
