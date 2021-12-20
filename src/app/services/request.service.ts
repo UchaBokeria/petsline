@@ -8,6 +8,7 @@ export class RequestService {
   URL = "http://api.petsline.ge/API/";
 
   HEADER = new HttpHeaders({
+      'Access-Control-Allow-Origin': '*',
       'Content-Type' : 'application/json',
       'Cache-Control': 'no-cache'
   }); 

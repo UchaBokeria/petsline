@@ -80,6 +80,7 @@ export class HomeComponent implements OnInit {
   constructor(private RequestService:RequestService) { }
 
   ngOnInit(): void {
+    
     var data = this.RequestService.Post({
       Router: "Help",
       Scheme: {
